@@ -36,7 +36,7 @@ class Profile extends React.Component {
       <>
         <DemoNavbar />
         <main className="profile-page" ref="main">
-          <section className="section-profile-cover section-shaped my-0">
+          <section className="section-profile-cover section-shaped my-0" style={{ height:"450px", backgroundColor: "#F27405",   margin: "0rem auto", textAlign: "center"   }} >
             {/* Circles background */}
             <div className="shape shape-style-1 shape-default alpha-4">
               <span />
@@ -86,6 +86,7 @@ class Profile extends React.Component {
                     >
                       <div className="card-profile-actions py-4 mt-lg-0">
                         <Button
+                        style={{backgroundColor:"#F27405" , color:'#FFFFFF' }}
                           className="mr-4"
                           color="info"
                           href="#pablo"
@@ -94,9 +95,9 @@ class Profile extends React.Component {
                         >
                           Connect
                         </Button>
-                        <Button
+                        <Button style={{backgroundColor:"#A6290D" , color:'#FFFFFF'}}
                           className="float-right"
-                          color="default"
+                          
                           href="#pablo"
                           onClick={e => e.preventDefault()}
                           size="sm"
@@ -108,7 +109,7 @@ class Profile extends React.Component {
                     <Col className="order-lg-1" lg="4">
                       <div className="card-profile-stats d-flex justify-content-center">
                         <div>
-                          <span className="heading">2 </span>
+                          <span className="heading">2Y </span>
                           <span className="description">Experience</span>
                         </div>
                         <div>
